@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tm-osm-processor"
+version = "0.1.0"
+description = ""
+authors = ["smbrine <smbrine@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+grpcio = "^1.62.0"
+grpcio-tools = "^1.62.0"
+grpcio-reflection = "^1.62.0"
+aiohttp = "^3.9.5"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.2.2"
+flake8 = "^7.0.0"
+ruff = "^0.4.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
